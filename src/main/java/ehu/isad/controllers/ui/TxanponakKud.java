@@ -76,7 +76,8 @@ public class TxanponakKud {
         try {
             Txanpona model = Sarea.getNireSarea().liburuarenDatuakHasieratu(combo.getValue());
             ObservableList<Txanpona> l = table.getItems();
-            model.setId(l.get(l.size()-1).getId()+1);
+            if (l.size()==0)model.setId(1);
+            else model.setId(l.get(l.size()-1).getId()+1);
             model.setData(dateFormat.format(date).replace("/","-"));
             model.setTxanpona(combo.getValue());
             model.setIrudia(txanponakDB.getPortaera(model));

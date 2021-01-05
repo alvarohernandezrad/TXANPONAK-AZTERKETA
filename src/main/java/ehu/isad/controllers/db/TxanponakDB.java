@@ -33,9 +33,7 @@ public class TxanponakDB{
     }
 
     public void addToDB(Txanpona model){
-        Float price = Float.parseFloat(df2.format(model.getPrice()));
-        Float volume = Float.parseFloat(df2.format(model.getVolume()));
-        String q = "insert into txanponak values("+model.getId()+",'"+model.getData()+"','"+price+"','"+model.getTxanpona()+"','"+volume+"')";
+        String q = "insert into txanponak values("+model.getId()+",'"+model.getData()+"','"+model.getPrice()+"','"+model.getTxanpona()+"','"+model.getVolume()+"')";
         dbcontroller.execSQL(q);
     }
 
