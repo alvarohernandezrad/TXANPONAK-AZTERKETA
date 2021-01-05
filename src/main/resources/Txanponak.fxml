@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ehu.isad.controllers.ui.TxanponakKud">
+    <children>
+        <TableView fx:id="table" layoutY="86.0" prefHeight="564.0" prefWidth="600.0">
+            <columns>
+                <TableColumn fx:id="idCol" prefWidth="41.0" text="ID" />
+                <TableColumn fx:id="txanponCol" prefWidth="88.0" text="Txanpon" />
+                <TableColumn fx:id="noizCol" prefWidth="184.0" text="Noiz" />
+                <TableColumn fx:id="zenbatCol" minWidth="0.0" prefWidth="101.0" text="Zenbat" />
+                <TableColumn fx:id="bolumenCol" prefWidth="93.0" text="Bolumena" />
+                <TableColumn fx:id="portaeraCol" prefWidth="92.0" text="Portaera" />
+            </columns>
+        </TableView>
+        <Button fx:id="sartu" layoutX="108.0" layoutY="34.0" mnemonicParsing="false" onAction="#onClick" prefHeight="26.0" prefWidth="80.0" text="Sartu" />
+        <Button fx:id="gorde" layoutX="220.0" layoutY="34.0" mnemonicParsing="false" onAction="#onClick" prefHeight="26.0" prefWidth="80.0" text="Gorde" />
+        <ComboBox fx:id="combo" layoutX="338.0" layoutY="34.0" prefWidth="150.0" />
+    </children>
+</AnchorPane>
