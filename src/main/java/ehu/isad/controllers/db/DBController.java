@@ -9,7 +9,7 @@ public class DBController {
 
     Connection conn=null;
     private static final DBController controller = new DBController();
-    private final String pathToSQLiteDB = Utils.getProperties().getProperty("pathToDB"); //SQLite
+    //private final String pathToSQLiteDB = Utils.getProperties().getProperty("pathToDB"); //SQLite
     private final String nameOfMySQLDB = Utils.getProperties().getProperty("pathToDB"); //MySQL
 
     private DBController() {
